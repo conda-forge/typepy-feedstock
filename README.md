@@ -5,11 +5,11 @@ Home: https://github.com/thombashi/typepy
 
 Package license: MIT
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/typepy-feedstock/blob/master/LICENSE.txt)
 
 Summary: typepy is a Python library for variable type checker/validator/converter at a run time.
 
-
+Development: https://github.com/thombashi/typepy
 
 Current build status
 ====================
