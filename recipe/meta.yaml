@@ -1,5 +1,5 @@
 {% set name = "typepy" %}
-{% set version = "1.1.1" %}
+{% set version = "1.1.5" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: a0850559dfd135577c6d565c0268fcad1327cab9c4c295015d4d882aa9a24786
+  sha256: 1bbe790bb8d1b43b4541b235678974d5aee2357e1948cdf17cb4c14cbe4a2a82
 
 build:
   number: 0
