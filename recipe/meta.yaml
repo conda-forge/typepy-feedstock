@@ -11,19 +11,21 @@ source:
   sha256: 89c1f66de6c6133209c43a94d23431d320ba03ef5db18f241091ea594035d9de
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: {{ PYTHON }} -m pip install . -vv
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
 requirements:
   host:
-    - pip
     - python {{ python_min }}
-    - setuptools >=38.3.0
+    - setuptools >=64
+    - setuptools-scm >=8
+    - releasecmd
+    - pip
   run:
-    - mbstrdecoder >=1.0.0,<2
     - python >={{ python_min }}
-    - setuptools >=38.3.0
+    - mbstrdecoder >=1.0.0,<2
+    - setuptools >=64
 
 test:
   imports:
